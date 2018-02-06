@@ -41,8 +41,6 @@ A vjson file should specify 1 or more variable files to include at the start of 
 
 To use a variable, the json should reference the variables using the syntax `{{ $.var_name }}`. The data file will replace any references to the variable with the value specified in the variables file. Nested variable names can be accessed by dot-joining the variable names on access such as `{{ $var_name.nested_var }}`.
 
-```
-
 Sample syntax for the main json file:
 
 ```
