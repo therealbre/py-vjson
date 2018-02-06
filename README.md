@@ -4,6 +4,16 @@ Load json with a variable template.
 ## Usage
 vjson was implemented to work interchangably with json. The common load(s)/dump(s) functions are all supported.
 
+Sample Usage:
+
+```PYTHON
+import vjson
+with open("data.json", "r") as f:
+  data = vjson.load(f)
+  
+print(vjson.dumps(data, indent=4))
+```
+
 ### Variables File
 
 A variables file is a json file used to describe the relationship between variable names and values. The key's within the variable file's json are used to specify the name of the variables. Variables will be referenced in the data file using the syntax `{{ $.var_name }}`. Nesting variable names within the json is acceptable and is accessed by dot-joining the variable names on access such as `{{ $parent.child_var }}`.
