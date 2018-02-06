@@ -1,6 +1,13 @@
 # py-vjson
 Load json with a variable template.
 
+## Install
+Download the repository and run the setup.py.
+
+```SHELL
+> python setup.py install
+```
+
 ## Usage
 vjson was implemented to work interchangably with json. The common load(s)/dump(s) functions are all supported.
 
