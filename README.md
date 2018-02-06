@@ -33,6 +33,7 @@ Sample syntax for the variables file (Seen as `/var/data/variables.json` in main
     "child_var": "child_value"
   }
 }
+```
 
 ### Data File
 
@@ -44,11 +45,12 @@ To use a variable, the json should reference the variables using the syntax `{{ 
 
 Sample syntax for the main json file:
 
-```JSON
+```
 #variables "/var/data/variables.json"
 {
   "my_key": "{{ $.var_name }},
   "nested": "{{ $.parent.child_value }}",
   "list": {{ $.var_list }},
   "dictionary": {{ $.var_dict }}
-}```
+}
+```
